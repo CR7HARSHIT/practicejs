@@ -82,13 +82,41 @@
 // 	key1:"harsh"
 // }
 // console.log(var2);
-let x="harsh"
-let y=new String("AxBxCDxE")
-// console.log(x.replace('h','AA'));
-// console.log(y.includes("AZ"));
-console.log(y.split("Bx"));
-let a=new Number(100)
-let b=500
-console.log(b.toFixed(2));
-console.log(typeof b);
-console.log(Math);
+// let x="harsh"
+// let y=new String("AxBxCDxE")
+// // console.log(x.replace('h','AA'));
+// // console.log(y.includes("AZ"));
+// console.log(y.split("Bx"));
+// let a=new Number(100)
+// let b=500
+// console.log(b.toFixed(2));
+// console.log(typeof b);
+// console.log(Math);
+// const v1={
+// 	key1:"Value1",
+// 	key2:2500,
+// 	key3:false,
+// 	"key4":[1,"harsh",{}],
+// 	key5:function(){
+//       console.log("harsh");
+// 	},
+// 	key6:{
+// 		Name:"Harshvardhan Singh"
+// 	}
+
+	
+
+// console.log(v1["key6"]);
+// console.log(v1.key6);
+const sym="Object key2"
+const obj1={
+	Key1:"Harsh",
+	[sym]:"This is Symbol key ",
+	key2: function(){
+		let x=this.key3;
+		console.log(x)
+	},
+	key3:25
+}
+console.log(obj1.key2());
+
